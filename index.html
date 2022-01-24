@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="banner">
+                <div class="box-banner">
+                    <div class="box-background"></div>
+                    <div class="box-banner-title">
+                       <h1>Mundo dos PETs</h1>
+                       <p>Adote um <strong>PET</strong> e ganhe um <strong>AMIGO!</strong></p>
+                    </div>
+                </div>                
+                <div class="box-info">
+                    <div class="info-background"></div>
+                    <div class="box-info-title">
+                       <h3>Seja bem vindo ao Mundo dos PETs</h3>
+                       <p>Cadastre-se e recebe seu novo integrante na família.</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="form-container">
+            <div class="form-title">
+                <h1>CADASTRO</h1>
+                <form>
+                    <div class="box-input">
+                        <div class="box-info-input">
+                           <label for="nome">Nome:</label>
+                           <input type="text" name="nome" placeholder="Nome completo" required>
+                           <label for="tel">Telefone:</label>
+                           <input type="tel" name="tel" placeholder="Telefone" required>
+                           <label for="idade">Idade:</label>
+                           <input type="date" name="idade" placeholder="idade" required>
+                           <label for="email">E-mail:</label>
+                           <input type="email" name="email" placeholder="E-mail" required>
+                           <label for="endereço">Endereço:</label>
+                           <input type="text" name="endereço" placeholder="Bairro, rua e nº da casa" required>
+                        </div>
+                        <!--A respeito do pet-->
+                        <div class="box-info-pet">
+                          <h3>Informações a respeito do PET:</h3>
+                            <p><strong>Tipo do PET:</strong></p>
+                        <input type="radio" id="cat" name="dogorcat">
+                        <label for="cat">Gatinho</label>
+                        <input type="radio" id="dog" name="dogorcat">
+                        <label for="dog">Cachorrinho</label>
+                        <p><strong>Sexo do PET:</strong></p>
+                        <input type="radio" id="macho" name="sexpet">
+                        <label for="macho">Macho</label>
+                        <input type="radio" id="femea" name="sexpet">
+                        <label for="femea">Fêmea</label>
+                        <br>
+                        <label for="size_pet"><strong>Tamanho do PET</strong></label>
+                        <select name="size_pet" id="size_pet">
+                            <option value="">Porte...</option>
+                            <option value="P">P</option>
+                            <option value="M">M</option>
+                            <option value="G">G</option>
+                        </select>
+                        <br>
+                        <input type="submit" class="btn-submit" value="Cadastrar" >
+                        </div>                        
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
